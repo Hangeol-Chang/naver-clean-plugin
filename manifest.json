@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Naver Clean",
+  "description": "네이버 페이지에서 뉴스스탠드와 피드를 제거하고 우측 컬럼을 중앙으로 정렬합니다.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["*://www.naver.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
+
+}
